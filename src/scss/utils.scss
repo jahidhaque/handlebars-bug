@@ -1,0 +1,186 @@
+/*
+|----------------------------------------------
+| setting up utility classes 
+| @author: jahid haque <jahid.haque@yahoo.com>
+| @copyright: cholbd, 2018
+|----------------------------------------------
+*/
+
+.h-100{
+    height: 100% !important;
+}
+
+.min-height-750{
+    height: calc(100vh - 100px);
+}
+.min-height-182{
+    height: calc(100vh - 80vh) !important;
+}
+.max-height-60vh{max-height: 70vh;}
+
+.no-focus{
+    &:hover {
+        border-color: none;
+        box-shadow: none;
+        outline: 0;
+    }
+    &:focus {
+        border-color: none;
+        box-shadow: none;
+        outline: 0;
+    }
+}
+
+.underline-none{
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.bottom-0{
+    bottom: 0;
+}
+.top-0{top: 0;}
+.top-10{
+    top: 10px;
+} 
+
+.right-0{right:0;}
+.right-20{right: 20px;}
+.left-0{
+    left: 0;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(360deg); } 
+}
+.spin {
+    line-height: 0;
+    animation: spin 2s linear infinite;
+    transform-origin: 50% 50%; 
+}
+
+// typography
+.thin{font-weight: 100;}
+.light{font-weight: 300;}
+.regular{font-weight: 400;}
+.bold{font-weight: 500;}
+
+.f-12{font-size:12px;}
+.f-13{font-size:13px;}
+.f-14{font-size:14px;}
+.f-15{font-size:15px;}
+.f-16{font-size:16px;}
+.f-17{font-size:17px;}
+.f-18{font-size:18px;}
+.f-25{font-size:25px;}
+.f-20{font-size:20px;}
+.f-45{font-size:45px;}
+.f-55{font-size:55px;}
+.f-60{font-size:60px;}
+
+//padding
+.pt-60{padding-top:60px;}
+
+//custom width
+.w-80{width: 80% !important;}
+.w-25{width: 25% !important;}
+.w-30{width: 30% !important;}
+.w-35{width: 35% !important;}
+.w-40{width: 40% !important;}
+.w-15{width: 15% !important;}
+.w-10{width: 10% !important;}
+.w-5{width: 5% !important;}
+
+.h-5{height: 5px;}
+
+.mr-minus-172{margin-right: -172px;}
+.rg-20p{right: 20%;}
+.tp-45p{top:45%;}
+//custom radius
+.radius-6{
+    border-radius: 6px;
+}
+
+
+//position.
+.bottom-0 {
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .showcase-text{
+        padding: 7rem;
+    }
+}
+
+//web
+.antmakes-web{
+    z-index: 3;
+    margin-top: -60px;
+}
+
+.bg-orange {
+    background-color: #f4623a;
+}
+
+
+//member dashboard
+
+.wrapper{
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+.dashboard-container{
+    width: 100%;
+    min-height: 100vh;
+    min-width: 0;
+    transition: margin-left 0.4s ease-in-out, left 0.4s ease-in-out;
+    background-color: #F5F9FC;
+}
+
+.dropdown-menu-right{
+    right: 0;
+    left:auto;
+}
+
+.sidebar{
+    min-width: 250px;
+    max-width: 250px;
+    transition: margin-left 0.4s ease-in-out, left 0.4s ease-in-out;
+    background: #354052;
+    border-right: 0;
+}
+.sidebar.toggled{
+    margin-left: -250px;
+}
+
+//home page.
+.bg-welcome-home{background-color: #DFE7EA;}
+.hover-shadow{
+    -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+}
+.hover-shadow-lg:hover {
+    -webkit-box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+    box-shadow: 0 1rem 3rem rgba(31, 45, 61, 0.125) !important;
+}
+.translate-y-ng10, .hover-translate-ng-n10:hover {
+    -webkit-transform: translateY(-10px) !important;
+        -ms-transform: translateY(-10px) !important;
+            transform: translateY(-10px) !important;
+}
